@@ -2,14 +2,14 @@
     "renametask": {
         "replace_peer": {},
         "upload": "1",
-        "@extend" : ["common_base", "html_base"]
+        "@extend" : ["common_base", "html_base"],
+        "NOTICE!":"@extend will extend content of a json object by finding in this file"
     },
 
 
     "common_base": {
         "replace_peer": {
-            "{{subfolder}}": "webbanner_campaign_{{campaign}}/",
-            "{{mainindex}}": "index.html"
+            "{{subfolder}}": "CUSTOMIZED_FOLDER_{{campaign}}/",
         }
     },
 
@@ -21,6 +21,7 @@
         "s3putbucket": "filegen-bucket",
         "replCharStart": "{{",
         "replCharEnd": "}}",
-        "contenttype": "text/html"
+        "contenttype": "text/html",
+        "NOTICE!":" please change filegen-bucket to your projecy bucket"
     }
 }

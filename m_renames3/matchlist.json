@@ -1,9 +1,6 @@
 {
-    "html_9JEPD_1007_8831_160x600.html" : "html_camp1007_cid9JEPD_tepl8831_160x600.html",
-    "html_9JEPD_1007_8832_300x250.html" : "html_camp1007_cid9JEPD_tepl8832_300x250.html",
-    "html_9JEPD_1007_8833_728x90.html"  : "html_camp1007_cid9JEPD_tepl8833_728x90.html",
-    "html_9JEPD_1007_8834_930x180.html" : "html_camp1007_cid9JEPD_tepl8834_930x180.html",
-    "html_9JEPD_1007_8835_930x600.html" : "html_camp1007_cid9JEPD_tepl8835_930x600.html",
-    "html_9JEPD_1007_8854_980x120.html" : "html_camp1007_cid9JEPD_tepl8854_980x120.html",
-    "html_9JEPD_1007_8855_300x600.html" : "html_camp1007_cid9JEPD_tepl8855_300x600.html"
+    "file1.html" : "file1-rename.html",
+    "file2.html" : "file2-rename.html",
+    "file3.html" : "file3-rename.html",
+    "file4.html" : "file4-rename.html"
 }

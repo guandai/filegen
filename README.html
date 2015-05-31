@@ -1016,8 +1016,22 @@ body .markdown-body
 }
 </style><title>README</title></head><body><article class="markdown-body"><h2 id="file-generator"><a name="user-content-file-generator" href="#file-generator" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>File Generator</h2>
 <p>multipal function in this package,<br />
-Aim to create files based on templates, adn backup<br />
-function list:</p>
+Aim to create files based on templates, adn backup</p>
+<p>for functional well , please change settings/s3credentials.json<br />
+Each utility has a folder to collect settings , resource and genereated file.<br />
+you also need to set your s3 bucket in each allsettings.json file for each utility folder. <br />
+in allsettings.json , there are also &ldquo;NOTICE!&rdquo; in each json section to help you understand the setting.</p>
+<p>function list:</p>
 <h4 id="replace-template-m_repltempjs"><a name="user-content-replace-template-m_repltempjs" href="#replace-template-m_repltempjs" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Replace Template : m_repltemp.js</h4>
 <p>replace template content by command arguments or json settings <br />
-  add replace </p></article></body></html>
+  replace  content in {{}} based on list in allsettings.json file where says replace_peer<br />
+  generate a local file and upload to s3  </p>
+<h4 id="duplicate-s3-file-m_renames3js"><a name="user-content-duplicate-s3-file-m_renames3js" href="#duplicate-s3-file-m_renames3js" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>duplicate s3 file : m_renames3.js</h4>
+<p>copy content of a file from s3, and upload it to another key / name<br />
+  use matchlist to duplicate files in the same folder on s3</p>
+<p>jasamine test is also usable by running<br />
+<pre><code>npm test
+</code></pre></p>
+<p>run the filegen by use command line  </p>
+<pre><code>node lib\filegen.js [UTILITY_NAME] -taskname-[TASK_NAME] ...
+</code></pre></article></body></html>
