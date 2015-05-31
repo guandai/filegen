@@ -1014,7 +1014,7 @@ body .markdown-body
     page-break-after: avoid;
   }
 }
-</style><title>README</title></head><body><article class="markdown-body"><h2 id="file-generator"><a name="user-content-file-generator" href="#file-generator" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>File Generator</h2>
+</style><title>README</title></head><body><article class="markdown-body"><h2 id="file-generator-by-node-command-line"><a name="user-content-file-generator-by-node-command-line" href="#file-generator-by-node-command-line" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>File Generator by node command line</h2>
 <p>multipal function in this package,<br />
 Aim to create files based on templates, adn backup</p>
 <p>for functional well , please change settings/s3credentials.json<br />
@@ -1031,16 +1031,16 @@ in allsettings.json , there are also &ldquo;NOTICE!&rdquo; in each json section 
   use matchlist to duplicate files in the same folder on s3</p>
 <p>jasamine test is also usable by running<br />
 <pre><code>npm test
-``
+</code></pre></p>
+<p>run the filegen by use command line  </p>
+<pre><code>cd lib
+node filegen.js [UTILITY_NAME] -taskname-[TASK_NAME] ...
+</code></pre>
 
-run the filegen by use command line  
+<p>the parameter can be any customized name in english letter, not support special chars out side a-z A-Z 0-9 , the content should also be a string witout space,<br />
+otherwise please escape it.</p>
+<p>example: <br />
+<pre><code>node filegen.js m_repltemp -taskname-html_test -fullname-myfilename  -id-XXXXX -width-120 -height-600 -mainindex-index.html -landing-http%3A%2F%2Ftwindai.com 
 
 </code></pre><br />
-cd lib<br />
-node filegen.js [UTILITY_NAME] -taskname-[TASK_NAME] &hellip;<br />
-<pre><code>
-
-example: 
-</code></pre><br />
-node filegen.js m_repltemp -taskname-html_test -fullname-myfilename  -id-XXXXX -width-120 -height-600 -mainindex-index.html -landing-http%3A%2F%2Ftwindai.com </p>
-<p>```</p></article></body></html>
+Notice!  if a parameter is url, it need to use encodeURICompanent escaped.</p></article></body></html>
