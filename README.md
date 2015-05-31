@@ -22,10 +22,18 @@ function list:
 jasamine test is also usable by running
 ```
 npm test
-```
+``
 
 run the filegen by use command line  
 
 ```
-node lib\filegen.js [UTILITY_NAME] -taskname-[TASK_NAME] ...
+cd lib
+node filegen.js [UTILITY_NAME] -taskname-[TASK_NAME] ...
+```
+
+
+example: 
+```
+node filegen.js m_repltemp -taskname-html_test -fullname-myfilename  -id-XXXXX -width-120 -height-600 -mainindex-index.html -landing-http%3A%2F%2Ftwindai.com 
+
 ```
