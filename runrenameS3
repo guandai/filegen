@@ -1,0 +1,9 @@
+#!/bin/bash
+TRACK_HOME=$(cd $(dirname $0)/.. ; pwd -P )
+TRACK_HOME=$(cd "$(dirname "$0")" ; pwd -P )
+TRACK_HOME=$TRACK_HOME
+echo ${TRACK_HOME}
+cd "${TRACK_HOME}"
+cd lib
+
+node filegen.js m_renames3 -taskname-renametask -cid-XXXXX -campaign-9999

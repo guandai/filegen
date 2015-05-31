@@ -1,0 +1,10 @@
+#!/bin/bash
+TRACK_HOME=$(cd $(dirname $0)/.. ; pwd -P )
+TRACK_HOME=$(cd "$(dirname "$0")" ; pwd -P )
+TRACK_HOME=$TRACK_HOME
+echo ${TRACK_HOME}
+cd "${TRACK_HOME}"
+cd lib
+
+
+node filegen.js m_repltemp -fullname-XXXXX_783_991000_120x600  -cid-XXXXX -campaign-783 -width-120 -height-600 -mainindex-index.html -landing-http%3A%2F%2Fyourdomain.com -taskname-html_html5_test 

@@ -1,0 +1,32 @@
+{
+    "html_html5_test": {
+        "changeIndexName": "0",
+        "export_filename": "html_{{fullname}}.html",
+        "template_name": "html_html5_test.html",
+        "@extend" : ["common_base", "html_base"],
+        "NOTICE!":"@extend will extend content of a json object by finding in this file"
+    },
+
+
+    "common_base": {
+        "replace_peer": {
+            "{{subfolder}}": "CUSTOMIZE_FOLDER_{{campaign}}/",
+            "{{mainindex}}": "index.html",
+            "NOTICE!":" your can use {{}} in replace_peer , filegen will replace it to correspoding value as well"
+            
+        }
+    },
+
+    "html_base": {
+        "skipbackup": "1",
+        "upload": "1",
+        "s3putkeypath": "{{cid}}/{{subfolder}}",
+        "s3getkeypath": "{{cid}}/{{subfolder}}",
+        "s3getbucket": "filegen-bucket",
+        "s3putbucket": "filegen-bucket",
+        "replCharStart": "{{",
+        "replCharEnd": "}}",
+        "contenttype": "text/html",
+        "NOTICE!":"Please change 'filegen-bucket' to your s3 bucket"
+    }
+}

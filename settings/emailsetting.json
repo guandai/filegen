@@ -1,0 +1,8 @@
+{   
+    "email_user": "yourSenderGmail@gmail.com",
+    "email_pass": "yourPassWord" ,
+    "email_sender" : "your sender name <webmaster@domain.com>",
+    "email_toaddr" : "receiveAddress@domian.com",
+    "email_subject" : "a filegen generated mail",
+    "NOTICE!":"please using gmail as sender email, otherwise you need ot check nodemailer to other mailservice"
+}

@@ -1,0 +1,26 @@
+{
+    "renametask": {
+        "replace_peer": {},
+        "upload": "1",
+        "@extend" : ["common_base", "html_base"]
+    },
+
+
+    "common_base": {
+        "replace_peer": {
+            "{{subfolder}}": "webbanner_campaign_{{campaign}}/",
+            "{{mainindex}}": "index.html"
+        }
+    },
+
+    "html_base": {
+        "upload": "1",
+        "s3putkeypath": "{{cid}}/{{subfolder}}",
+        "s3getkeypath": "{{cid}}/{{subfolder}}",
+        "s3getbucket": "filegen-bucket",
+        "s3putbucket": "filegen-bucket",
+        "replCharStart": "{{",
+        "replCharEnd": "}}",
+        "contenttype": "text/html"
+    }
+}

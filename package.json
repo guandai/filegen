@@ -1,0 +1,42 @@
+{
+  "name": "feedgen",
+  "description": "feed generator",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "testnl": "./node_modules/.bin/jasmine-node spec",
+    "test": "./node_modules/.bin/jasmine"
+  },
+   "licenses": [
+    {
+      "type": "BSD",
+      "url": "https://github.com/guandai/filegen/blob/master/LICENSE"
+    }
+  ],
+  "dependencies": {
+    "MD5": "x",
+    "async": "x",
+    "aws-sdk": "2.x",
+    "csv": "0.4.x",
+    "encoding": "x",
+    "express": "3.x",
+    "htmlparser2": "3.7.x",
+    "iconv": "2.1.x",
+    "js2xmlparser": "0.1.x",
+    "json2csv": "2.2.x",
+    "karma": "^0.12.32",
+    "mkpath": "0.1.x",
+    "nodemailer": "x",
+    "request": "2.33.x",
+    "supervisor": "0.5.x",
+    "winston": "0.7.1",
+    "xml2js": "0.4.x"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-available-tasks": "^0.5.7",
+    "grunt-karma": "^0.10.1",
+    "grunt-tasks-list": "^0.1.1",
+    "jasmine": "^2.3.1"
+  }
+}
